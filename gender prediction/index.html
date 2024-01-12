@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gender Prediction</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+<body style="background: url('./bg.jpeg') no-repeat center center fixed; background-size: cover; font-family: 'Georgia', serif;">
+
+    <header class="app-header">
+        <h1>Gender Identification</h1>
+    </header>
+
+    <main id="app" class="app">
+        <section class="prediction-section">
+            <form id="predictionForm" class="prediction-form">
+                <div class="form-group">
+                    <label for="nameInput">Name:</label>
+                    <input type="text" id="nameInput" name="name" placeholder="Name"/>
+                </div>
+                <div class="gender-selection">
+                    <input type="radio" id="male" name="gender" value="male" />
+                    <label for="male">Male</label>
+                    <input type="radio" id="female" name="gender" value="female" />
+                    <label for="female">Female</label>
+                    <input type="radio" id="api" name="gender" value="api" checked />
+                    <label for="api">Auto</label>
+                </div>
+                <div class="form-actions">
+                    <button type="submit" class="btn submit-btn">Submit</button>
+                    <button type="button" id="saveButton" class="btn save-btn">Save</button>
+                </div>
+            </form>
+        </section>
+
+        <section id="messages" class="messages">
+            <div id="errorMessage" class="error-message"></div>
+            <div id="predictionResult" class="prediction-result">
+                <h4>Prediction</h4>
+            </div>
+        </section>
+
+        <section class="saved-answers">
+            <header>
+                <h2>Saved Responses</h2>
+            </header>
+            <ul id="savedAnswers" class="saved-list"></ul>
+            <button id="clearAllButton" class="btn clear-all-btn">Clear All</button>
+        </section>
+    </main>
+
+    <footer><a href="http://">my github</a></footer>
+    <script src="script.js"></script>
+</body>
+
+</html>

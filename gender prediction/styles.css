@@ -1,0 +1,163 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Background image */
+  body {
+    background: url('./bg.jpeg') no-repeat center center fixed;
+    background-size: cover;
+    font-family: 'Georgia', serif; /* Changed font to Georgia */
+  }
+  
+  /* Main application container */
+  .app {
+    width: 70%; /* Adjusted width for a more centered appearance */
+    margin: 50px auto; /* Increased top margin for better spacing */
+    background: rgba(173, 216, 230, 0.8); /* Light blue background color */
+    border-radius: 20px; /* Increased border-radius for a rounded rectangle */
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Header styles */
+  .app-header {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  /* Heading styles */
+  .app-header h1 {
+    font-size: 2.5em;
+    color: #333;
+  }
+  
+  /* Form group styling */
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  /* Text field styles */
+  input[type="text"],
+  input[type="password"],
+  textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  /* Gender options */
+  .gender-options label {
+    margin-right: 10px;
+  }
+  
+  /* Form actions */
+  .form-actions {
+    margin-top: 20px; /* Adjusted margin-top for better spacing */
+  }
+  
+  /* Button styles */
+  .btn {
+    display: inline-block;
+    background-color: #337ab7; /* Updated button color */
+    color: white;
+    padding: 10px 20px;
+    margin: 5px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  /* Button hover effects */
+  .btn:hover {
+    opacity: 0.8;
+  }
+  
+  /* Results and saved responses styles */
+  .results {
+    margin-top: 20px;
+  }
+  
+  /* Individual result box */
+  .prediction-result {
+    padding: 10px;
+    background: #f9f9f9;
+    border-radius: 4px;
+    margin-bottom: 20px;
+  }
+  
+  /* Saved list styles */
+  .saved-list {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  /* Additional styles for prediction-section */
+  .prediction-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .prediction-form {
+    width: 50%;
+  }
+  
+  /* Styles for the messages section */
+  .messages {
+    background-color: #ecf0f1;
+    border: 1px solid #bdc3c7;
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    
+    /* Adjusted height and width for a square appearance */
+    height: 200px;
+    width: 200px;
+  }
+  
+  .messages h4 {
+    font-size: 1.5em;
+    color: #333;
+    font-weight: bold;
+  }
+  
+  /* Additional CSS for responsiveness */
+  @media screen and (max-width: 768px) {
+      .app {
+          width: 90%;
+      }
+  
+      .prediction-form {
+          width: 100%;
+      }
+  }
+  
+/* Additional styles for horizontal alignment */
+.messages-section {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media screen and (min-width: 769px) {
+    .app {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    .prediction-section,
+    .messages-section,
+    .saved-answers {
+        width: 30%;
+    }
+}
+  
